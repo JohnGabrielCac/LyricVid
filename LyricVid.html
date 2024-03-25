@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lyrics with Video</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #808080; /* Gray background */
+  }
+
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+  }
+
+  #lyrics-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: gray; /* Text color */
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+  }
+</style>
+</head>
+<body>
+<div id="video-container">
+  <video controls autoplay loop>
+    <source src="c:\Users\cacjs\Downloads\Mitski - My Love Mine All Mine.mp4" type="video/mp4">
+  </video>
+  <div id="lyrics-overlay">
+    <p>Moon, a hole of light
+        Through the big top tent up high</p>
+    <p>Here before and after me
+        Shinin' down on me</p>
+    <p>Moon, tell me if I could
+        Send up my heart to you?</p>
+    <p>So, when I die, which I must do
+        Could it shine down here with you?</p>
+    <p>'Cause my love is mine, all mine
+        I love mine, mine, mine</p>
+    <p>Nothing in the world belongs to me
+        But my love mine, all mine, all mine</p>
+    <p>My baby, here on earth
+        Showed me what my heart was worth</p>
+    <p>So, when it comes to be my turn
+        Could you shine it down here for her?</p>
+    <p>'Cause my love is mine, all mine
+        I love mine, mine, mine</p>
+    <p>Nothing in the world belongs to me
+        But my love mine, all mine</p>
+    <p>Nothing in the world is mine for free
+        But my love mine, all mine, all mine</p>
+  </div>
+</div>
+</body>
+</html>
